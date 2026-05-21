@@ -1,0 +1,50 @@
+# Build output
+target/
+*.class
+*.jar
+*.war
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Application runtime data — NEVER commit these
+users.txt
+users.json
+downloads/
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+secrets/
+.env
+.env.*
+!.env.example
+
+# Coverage & analysis reports
+jacoco.exec
+dependency-check-report.*
+spotbugs-*.xml
+
+# SBOM & signing artifacts (built in CI, not committed)
+sbom.json
+*.sig
+*.cert
