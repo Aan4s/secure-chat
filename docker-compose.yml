@@ -1,0 +1,19 @@
+services:
+  server:
+    build: .
+    image: secure-chat:latest
+    container_name: secure-chat-server
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./certs:/app/certs:ro
+      - chat-data:/app/data
+    environment:
+      SECURECHAT_PORT: "8888"
+      SECURECHAT_KEYSTORE: "/app/certs/server.p12"
+      SECURECHAT_KEYSTORE_PASSWORD: "${SECURECHAT_KEYSTORE_PASSWORD:-changeit}"
+      SECURECHAT_USERS_FILE: "/app/data/users.txt"
+    restart: unless-stopped
+
+volumes:
+  chat-data:
