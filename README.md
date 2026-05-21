@@ -4,7 +4,7 @@ A small Java terminal chat application with authenticated users and file transfe
 
 This is the hardened version of a university Java project. The rebuild fixes several real security issues from the original and packages the result for Docker delivery with CI.
 
-![CI](https://img.shields.io/badge/CI-GitHub_Actions-blue)
+[![CI](https://github.com/Aan4s/secure-chat/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Aan4s/secure-chat/actions/workflows/ci.yml)
 ![CodeQL](https://img.shields.io/badge/SAST-CodeQL-green)
 ![Java](https://img.shields.io/badge/Java-21-orange)
 
